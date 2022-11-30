@@ -1,0 +1,84 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*propiedad del contenedor*/
+.contenedor{
+    height: 800px;
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+
+    grid-template-areas: 
+        "header header header"
+        "main main div"
+        "section section section"
+        "footer footer footer";
+   
+}
+/*propiedades de los hijos*/
+.hijos-uno{
+    background-color: aquamarine;
+    grid-area: header;
+}
+.hijos-dos{
+    background-color: antiquewhite;
+    grid-area: main;
+}
+.hijos-tres{
+    background-color: brown;
+    grid-area:  div;
+}
+.hijos-cuatro{
+    background-color: blue;
+    grid-area: section;
+}
+.hijos-cinco{
+    background-color: darkgreen;
+    grid-area: footer;
+}
+/*estilos de ejemplo*/
+.ejemplo{
+    background-color: tomato;
+    height: 500px;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+/*estilos de hijos*/
+.hijo-1{
+    justify-self: right;
+}
+/*estilos de ejemplo-2*/
+.contain{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr ;
+    grid-template-rows: 0.8fr 2fr 2fr 0.8fr ;
+
+    grid-template-areas: 
+        "header header header header"
+        "main main main section"
+        "main main main section"
+        "footer footer footer footer";
+}
+header{
+    background-color: thistle;
+    grid-area: header;
+}
+main{
+    background-color: rgb(198, 156, 198);
+    grid-area: main;
+}
+section{
+    background-color: rgb(146, 72, 146);
+    grid-area: section;
+}
+footer{
+    background-color: rgb(91, 38, 91);
+    grid-area: footer;
+}
