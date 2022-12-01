@@ -7,7 +7,7 @@
 /*propiedad del contenedor*/
 .contenedor{
     height: 800px;
-    background-color: tomato;
+    background-color: rgb(71, 126, 255);
     display: grid;
     grid-template-columns: ;
     grid-template-rows: ;
